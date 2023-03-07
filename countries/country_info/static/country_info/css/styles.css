@@ -1,0 +1,73 @@
+.cbody #container {
+
+                           background: #FFFFFF;
+
+                           position: relative; /* відносна позиція відцентрує блок */
+
+                           width: 780px; /* на 20px менше від 800px ширини для */
+
+                           margin: 0 auto; /* auto разом з width центрує сторінку */
+
+                           text-align: left;
+
+                           }
+
+.cbody #header {
+
+                        height: 60px;
+
+                        padding: 0 10px 0 20px; /* додатк відступи зліва та знизу */
+
+                        background-color: #33CCFF;
+
+                       }
+
+.cbody #sidebar1 {
+
+                         position: absolute;
+
+                         top: 60px; /* зсув на висоту шапки */
+
+                         left: 0;
+
+                         width: 150px; /* ширина колонки, фоновий колір блоку */
+
+                         padding: 15px 10px 15px 20px; /* відступи */
+
+                         background-color: #FF99CC;
+
+                      }
+
+.cbody #sidebar2 {
+
+                         position: absolute;
+
+                         top: 60px;
+
+                        right: 0;
+
+                        width: 160px;
+
+                        padding: 15px 10px 15px 20px;
+
+                        background-color: #FF99CC;
+
+                     }
+
+.cbody #mainContent {
+
+                        margin: 0 200px; /* правое и левое поле створюють дві колонки */
+
+                        padding: 0 10px;
+
+                     }
+
+.cbody #footer {
+
+                      text-align: center;
+
+                      padding: 0 10px 0 20px;
+
+                      background-color: #ccccff;
+
+                    }
