@@ -21,8 +21,13 @@
   </div>
 
 <div id="sidebar1">
+        <ul>
+ 		{% for contin in cont %}
 
- 		<! лівий сайдбар - сюди вставляють код меню >
+            <li> <a href="/{{ contin }}"> {{ contin }}</a> </li>
+
+        {% endfor %}
+        </ul>
 
           </div>
 
