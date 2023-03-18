@@ -21,5 +21,5 @@ from country_info.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index),
-    path('<path:name>/', inform),
+    path('<path:name>/', inform, name='inform'),
 ]

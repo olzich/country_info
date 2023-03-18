@@ -1,0 +1,11 @@
+{% extends "country_info/base.html" %}
+
+{% block mainContent %}
+
+{% for cont in info%}
+
+{{ cont.describe }}
+
+{% endfor %}
+
+ {% endblock %}

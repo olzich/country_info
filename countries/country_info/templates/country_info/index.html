@@ -1,58 +1,21 @@
-{% load static %}
+{% extends "country_info/base.html" %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title> {{ title }} </title>
-    <link type="text/css" href="{% static 'country_info/css/styles.css' %}" rel="stylesheet" />
-</head>
 
-<body class="cbody">
 
-   <div id="container">
+    {% block content %}
+ 		<ul>
+        {% for contin in cont %}
 
-<div id="header">
-
-                <div class="for_header"> Info about countries </div>
-
-                 
-
-  </div>
-
-<div id="sidebar1">
-        <ul>
- 		{% for contin in cont %}
-
-            <li> <a href="/{{ contin }}"> {{ contin }}</a> </li>
+            <li><a href= {{ contin.get_absolute_url }}>  {{ contin }} </a>
+            </li>
 
         {% endfor %}
         </ul>
 
-          </div>
+        {% endblock %}
 
-         <div id="mainContent">
+
+         {% block mainContent %}
 
              {{ info }}
-
-    </div>
-
-    <div id="sidebar2">
-
- 			<! правий сайдбар - сюди вставте гаджети >
-
-          </div>
-
-         <div id="footer">
-
- 			@olzich   2023
-
- 	 </div>
-
-    </div>
-
-</body>
-</html>
-
-
-
+         {% endblock %}
