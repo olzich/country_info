@@ -2,20 +2,7 @@
 
 
 
-    {% block content %}
- 		<ul>
-        {% for contin in cont %}
-
-            <li><a href= {{ contin.get_absolute_url }}>  {{ contin }} </a>
-            </li>
-
-        {% endfor %}
-        </ul>
-
-        {% endblock %}
-
-
-         {% block mainContent %}
+        {% block mainContent %}
 
              {{ info }}
          {% endblock %}

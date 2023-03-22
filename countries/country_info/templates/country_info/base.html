@@ -22,8 +22,14 @@
 
 <div id="sidebar1">
 
-     {% block content %}
-     {% endblock %}
+     <ul>
+        {% for contin in cont %}
+
+            <li><a href= {{ contin.get_absolute_url }}>  {{ contin }} </a>
+            </li>
+
+        {% endfor %}
+        </ul>
 
           </div>
 
@@ -40,6 +46,9 @@
           </div>
 
          <div id="footer">
+
+             {% block return %}
+             {% endblock %}
 
  			@olzich   2023
 
